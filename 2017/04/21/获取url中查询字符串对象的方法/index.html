@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Baby，加油 | Hexo</title>
+  <title>二、获取url中查询字符串对象的方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎来到我的个人博客，小小IT，大大能量，坚持自己，一直走在学习的道路上，痛并快乐着。。。 hexo常用(创建博文)命令行12345678910111213141516/*新建一篇博文*/$ hexo new &quot;My New Post&quot;/*运行本地服务器*/$ hexo server/*生成静态页面*/$ hexo generate/*部署到远程站点*/$ hexo deployhexo n ==">
+  <meta name="description" content="获取url中拼接字符串的方法12345678910111213141516171819function getUrlAttribute(url) &amp;#123;	var url=url.replace(&apos;?&apos;,&apos;&apos;).trim()	if(url.length&amp;gt;0)&amp;#123;		var args = new Object( );        var pairs = url.split(&quot;&amp;a">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Baby，加油">
-<meta property="og:url" content="http://yoursite.com/2018/01/20/hello-world/index.html">
+<meta property="og:title" content="二、获取url中查询字符串对象的方法">
+<meta property="og:url" content="http://yoursite.com/2017/04/21/获取url中查询字符串对象的方法/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="欢迎来到我的个人博客，小小IT，大大能量，坚持自己，一直走在学习的道路上，痛并快乐着。。。 hexo常用(创建博文)命令行12345678910111213141516/*新建一篇博文*/$ hexo new &quot;My New Post&quot;/*运行本地服务器*/$ hexo server/*生成静态页面*/$ hexo generate/*部署到远程站点*/$ hexo deployhexo n ==">
-<meta property="og:updated_time" content="2017-04-21T03:12:28.489Z">
+<meta property="og:description" content="获取url中拼接字符串的方法12345678910111213141516171819function getUrlAttribute(url) &amp;#123;	var url=url.replace(&apos;?&apos;,&apos;&apos;).trim()	if(url.length&amp;gt;0)&amp;#123;		var args = new Object( );        var pairs = url.split(&quot;&amp;a">
+<meta property="og:updated_time" content="2017-04-21T02:59:31.208Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Baby，加油">
-<meta name="twitter:description" content="欢迎来到我的个人博客，小小IT，大大能量，坚持自己，一直走在学习的道路上，痛并快乐着。。。 hexo常用(创建博文)命令行12345678910111213141516/*新建一篇博文*/$ hexo new &quot;My New Post&quot;/*运行本地服务器*/$ hexo server/*生成静态页面*/$ hexo generate/*部署到远程站点*/$ hexo deployhexo n ==">
+<meta name="twitter:title" content="二、获取url中查询字符串对象的方法">
+<meta name="twitter:description" content="获取url中拼接字符串的方法12345678910111213141516171819function getUrlAttribute(url) &amp;#123;	var url=url.replace(&apos;?&apos;,&apos;&apos;).trim()	if(url.length&amp;gt;0)&amp;#123;		var args = new Object( );        var pairs = url.split(&quot;&amp;a">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -229,11 +229,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-获取url中查询字符串对象的方法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/01/20/hello-world/" class="article-date">
-      <time datetime="2018-01-19T16:00:00.000Z" itemprop="datePublished">2018-01-20</time>
+      <a href="/2017/04/21/获取url中查询字符串对象的方法/" class="article-date">
+      <time datetime="2017-04-21T02:54:28.000Z" itemprop="datePublished">2017-04-21</time>
 </a>
     </div>
   
@@ -246,7 +246,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Baby，加油
+      二、获取url中查询字符串对象的方法
     </h1>
   
 
@@ -263,9 +263,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>欢迎来到我的个人博客，小小IT，大大能量，坚持自己，一直走在学习的道路上，痛并快乐着。。。</p>
-<h2 id="hexo常用-创建博文-命令行"><a href="#hexo常用-创建博文-命令行" class="headerlink" title="hexo常用(创建博文)命令行"></a>hexo常用(创建博文)命令行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">/*新建一篇博文*/</div><div class="line">$ hexo new <span class="string">"My New Post"</span></div><div class="line"></div><div class="line">/*运行本地服务器*/</div><div class="line">$ hexo server</div><div class="line"></div><div class="line">/*生成静态页面*/</div><div class="line">$ hexo generate</div><div class="line"></div><div class="line">/*部署到远程站点*/</div><div class="line">$ hexo deploy</div><div class="line"></div><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure>
-<h2 id="hexo常用-创建新页面-命令行"><a href="#hexo常用-创建新页面-命令行" class="headerlink" title="hexo常用(创建新页面)命令行"></a>hexo常用(创建新页面)命令行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/*新建一个页面*/</div><div class="line">$ hexo new <span class="string">"My New Post"</span></div><div class="line"></div><div class="line">/*================================================================</div><div class="line">	在 themes-&gt;(主题目录)-&gt;_config.yml配置文件中有新建页面的基本信息</div><div class="line">	在<span class="built_in">source</span>下面会新增页面的目录，里面是md文件</div><div class="line">	在public中会新增页面目录，里面是html文件</div><div class="line">==================================================================*/</div></pre></td></tr></table></figure>
+        <h3 id="获取url中拼接字符串的方法"><a href="#获取url中拼接字符串的方法" class="headerlink" title="获取url中拼接字符串的方法"></a>获取url中拼接字符串的方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> getUrlAttribute(url) &#123;</div><div class="line">	var url=url.replace(<span class="string">'?'</span>,<span class="string">''</span>).trim()</div><div class="line">	<span class="keyword">if</span>(url.length&gt;0)&#123;</div><div class="line">		var args = new Object( );</div><div class="line">        var pairs = url.split(<span class="string">"&amp;"</span>); </div><div class="line">        <span class="keyword">for</span>(var i = 0; i &lt; pairs.length; i++) </div><div class="line">        &#123;</div><div class="line">            var pos = pairs[i].indexOf(<span class="string">"="</span>); </div><div class="line">            <span class="keyword">if</span> (pos == -1) </div><div class="line">                <span class="built_in">continue</span>; </div><div class="line">            var argname = pairs[i].substring(0,pos); </div><div class="line">            var value = pairs[i].substring(pos+1); </div><div class="line">            value = decodeURIComponent(value); </div><div class="line">            args[argname] = value; </div><div class="line">        &#125;</div><div class="line">        //根据键名获取值</div><div class="line">        <span class="built_in">return</span> args; </div><div class="line">	&#125; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="调用方式"><a href="#调用方式" class="headerlink" title="调用方式"></a>调用方式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var searchStr = window.location.search;</div><div class="line">var urlObj = new getUrlAttribute(searchStr);</div><div class="line"></div><div class="line">/* 如果拼接字符串是?code=2&amp;page=3 ,则：*/</div><div class="line">var code = urlObj.code;</div><div class="line">var page = urlObj.page;</div></pre></td></tr></table></figure>
       
       
     </div>
@@ -274,13 +273,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/01/20/hello-world/">Baby，加油</a></p>
+        <p><span>本文标题:</span><a href="/2017/04/21/获取url中查询字符串对象的方法/">二、获取url中查询字符串对象的方法</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 闫一诺 的个人博客">闫一诺</a></p>
-        <p><span>发布时间:</span>2018年01月20日 - 00时00分</p>
-        <p><span>最后更新:</span>2017年04月21日 - 11时12分</p>
+        <p><span>发布时间:</span>2017年04月21日 - 10时54分</p>
+        <p><span>最后更新:</span>2017年04月21日 - 10时59分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/01/20/hello-world/" title="Baby，加油">http://yoursite.com/2018/01/20/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/01/20/hello-world/　　作者: 闫一诺" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/04/21/获取url中查询字符串对象的方法/" title="二、获取url中查询字符串对象的方法">http://yoursite.com/2017/04/21/获取url中查询字符串对象的方法/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/04/21/获取url中查询字符串对象的方法/　　作者: 闫一诺" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -293,15 +292,20 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/04/21/标题栏的小图标设置/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/04/20/表单验证码倒计时/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          标题栏的小图标设置
+          一、表单验证码倒计时
         
       </div>
     </a>
   
+  
+    <a href="/2017/04/21/标题栏的小图标设置/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">标题栏的小图标设置</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -310,7 +314,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo常用-创建博文-命令行"><span class="toc-number">1.</span> <span class="toc-text">hexo常用(创建博文)命令行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo常用-创建新页面-命令行"><span class="toc-number">2.</span> <span class="toc-text">hexo常用(创建新页面)命令行</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#获取url中拼接字符串的方法"><span class="toc-number">1.</span> <span class="toc-text">获取url中拼接字符串的方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调用方式"><span class="toc-number">2.</span> <span class="toc-text">调用方式</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -358,7 +362,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2018/01/20/hello-world/" data-title="Baby，加油" data-url="http://yoursite.com/2018/01/20/hello-world/"></div>
+    <div class="ds-thread" data-thread-key="2017/04/21/获取url中查询字符串对象的方法/" data-title="二、获取url中查询字符串对象的方法" data-url="http://yoursite.com/2017/04/21/获取url中查询字符串对象的方法/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -381,13 +385,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/04/21/标题栏的小图标设置/" title="上一篇: 标题栏的小图标设置">
+            <a href="/2017/04/20/表单验证码倒计时/" title="上一篇: 一、表单验证码倒计时">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/04/21/标题栏的小图标设置/" title="下一篇: 标题栏的小图标设置">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/01/20/hello-world/">Baby，加油</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/21/标题栏的小图标设置/">标题栏的小图标设置</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/21/获取url中查询字符串对象的方法/">二、获取url中查询字符串对象的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/20/表单验证码倒计时/">一、表单验证码倒计时</a></li></ul>
